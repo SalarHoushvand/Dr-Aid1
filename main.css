@@ -216,6 +216,10 @@ input[type=submit] {
 
 }
 
+#user-shape{
+    width: 70px;
+    height: 70px;
+}
 
 @keyframes example {
     0% {width:100px;
@@ -355,5 +359,36 @@ opacity: 1 !important;
     margin-bottom: 40px;
 }
 
+.form-control{
+    width: 300px !important;
+  
+}
 
+#exampleFormControlSelect2{
+    height: 200px !important;
+}
+
+#bluetable{
+    color: white !important;
+    margin-top: 60px;
+    font-size: 15px;
+    text-align: center;
+    height: 300px !important;
+    border-radius: 10px;
+    background-color: #141518;
+    border-color: #303641;
+    
+    
+   
+}
+
+tr{
+    border-color: #303641 !important;
+    border-width: 10px !important;
+}
+
+td{
+    border-color: #303641 !important;
+
+}
 
