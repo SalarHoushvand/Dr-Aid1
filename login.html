@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+
     <style>
         body {
             background-color: #303641;
@@ -18,15 +17,15 @@
 </head>
 
 <body>
-    <div   id="welcome-text" align="center">
-            <p style=" font-size: 30px;"><b>Welcome to Dr.Aid</b></p>
-            <img id="heart-shape" src="images/heartbeat.png" alt="" >
-           
+    <div id="welcome-text" align="center">
+        <p style=" font-size: 30px;"><b>Welcome to Dr.Aid</b></p>
+        <img id="heart-shape" src="images/heartbeat.png" alt="">
+
     </div>
-       
+
     <div id="container-login">
-           
-          
+
+
         <div id="title">
             <i class="material-icons lock">lock</i> Login
         </div>
@@ -45,7 +44,8 @@
                 <div class="input-addon">
                     <i class="material-icons">vpn_key</i>
                 </div>
-                <input id="password" placeholder="Password" type="password" required class="validate" autocomplete="off">
+                <input id="password" placeholder="Password" type="password" required class="validate"
+                    autocomplete="off">
             </div>
 
             <div class="remember-me">
@@ -53,12 +53,13 @@
                 <span style="color: #DDD">Remember Me</span>
             </div>
 
-           <input  type="submit" value="Log In"  onclick="login()"/> 
+            
         </form>
-
+        <button id="register-link" onclick="myFunction()">Log in</button>
+        
         <div id="wrong-password"> </div>
-        
-        
+
+
         <div class="forgot-password">
             <a href="#">Forgot your password?</a>
         </div>
@@ -68,19 +69,20 @@
 
         <div class="register">
             Don't have an account yet?
-            <a href="register.html"><button id="register-link" >Register here</button></a>
+            <a href="register.html"><button id="register-link">Register here</button></a>
         </div>
     </div>
 
-<script>
-
-function login(){
-    if (document.getElementById("username").value == "admin" && document.getElementById("password").value == "admin")
-    {window.location.replace("mainpage.html");}
-    else {document.getElementById("wrong-password").innerHTML = "Incorrect Username or Password";}
-}
-
-</script>
+    <script>
+        function myFunction() {
+            if (document.getElementById("username").value == "admin" && document.getElementById("password").value ==
+                "admin") {
+                window.location.replace("mainpage.html");
+            } else {
+                document.getElementById("wrong-password").innerHTML = "Incorrect Username or Password";
+            }
+        }
+    </script>
 
 
 
