@@ -30,12 +30,12 @@
             <i class="material-icons lock">lock</i> Login
         </div>
 
-        <form>
+        <form action="check_user-pass.php" method="POST">
             <div class="input">
                 <div class="input-addon">
                     <i class="material-icons">face</i>
                 </div>
-                <input id="username" placeholder="Username" type="text" required class="validate" autocomplete="off">
+                <input id="username" placeholder="Username" type="text" required class="validate" autocomplete="off" name="username">
             </div>
 
             <div class="clearfix"></div>
@@ -45,17 +45,19 @@
                     <i class="material-icons">vpn_key</i>
                 </div>
                 <input id="password" placeholder="Password" type="password" required class="validate"
-                    autocomplete="off">
+                    autocomplete="off" name="password">
             </div>
 
             <div class="remember-me">
                 <input type="checkbox">
-                <span style="color: #DDD">Remember Me</span>
+                <span style="color: #DDD">Remember Me</span><br>
+
+                <input id="register-link" type="submit" name="submit" value="Login!">
             </div>
 
             
         </form>
-        <button id="register-link" onclick="myFunction()">Log in</button>
+        <!-- <button id="register-link" onclick="myFunction()">Log in</button> -->
         
         <div id="wrong-password"> </div>
 
@@ -73,6 +75,7 @@
         </div>
     </div>
 
+    <!--
     <script>
         function myFunction() {
             if (document.getElementById("username").value == "admin" && document.getElementById("password").value ==
@@ -83,7 +86,7 @@
             }
         }
     </script>
-
+-->
 
 
 </body>
