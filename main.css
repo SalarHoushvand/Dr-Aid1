@@ -304,7 +304,21 @@ opacity: 0;
     border-color: rgb(0, 136, 204)  !important;
     border-width: 1px !important;
 }
-
+/*
+#dashboard::after {
+    content: "";
+    background-image: url("images/heartbeat.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.05;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+*/
 
 body {
     background-color:  #303641 !important;

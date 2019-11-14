@@ -21,12 +21,12 @@
             <i class="material-icons lock">lock</i> Register
         </div>
 
-        <form>
+        <form action="connect.php" method="POST">
             <div class="input">
                 <div class="input-addon">
                     <i class="material-icons">email</i>
                 </div>
-                <input id="email" placeholder="Email" type="email" required class="validate" autocomplete="off">
+                <input id="email" placeholder="Email" type="email" required class="validate" autocomplete="off" name="email">
             </div>
 
             <div class="clearfix"></div>
@@ -35,7 +35,7 @@
                 <div class="input-addon">
                     <i class="material-icons">face</i>
                 </div>
-                <input id="username" placeholder="Username" type="text" required class="validate" autocomplete="off">
+                <input id="username" placeholder="Username" type="text" required class="validate" autocomplete="off" name="username">
             </div>
 
             <div class="clearfix"></div>
@@ -44,7 +44,7 @@
                 <div class="input-addon">
                     <i class="material-icons">vpn_key</i>
                 </div>
-                <input id="password" placeholder="Password" type="password" required class="validate" autocomplete="off">
+                <input id="password" placeholder="Password" type="password" required class="validate" autocomplete="off" name="password">
             </div>
 
             <div class="remember-me">
@@ -52,10 +52,11 @@
                 <span style="color: #DDD">I accept Terms of Service</span>
             </div>
 
-            <input type="submit" value="Register" />
+            <input name="submit" type="submit" value="Register" />
         </form>
 
         <div class="privacy">
+                   
             <a href="#">Privacy Policy</a>
         </div>
 
