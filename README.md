@@ -39,4 +39,4 @@ In order to provide the user with this information, the following APIs, librarie
 * PHP
 
 ## Credits
-Dr. Aid was created by Salar Houshvand, Scott Johnson, and Marcey Lewin.
+Dr. Aid was created by <a href="https://github.com/SalarHoushvand">Salar Houshvand</a>, <a href="https://github.com/rscottjohnson">Scott Johnson</a>, and Marcey Lewin.
