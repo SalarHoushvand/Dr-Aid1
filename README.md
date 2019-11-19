@@ -1,12 +1,3 @@
-
-An HTML web page for medical management.
-
-Installing:
-download xampp program
-start apache and MySQL
-delete all the files in htdocs folder
-replace all the project files
-
 # Dr Aid
 ### An web app for collection and management of patient's clinical information
 
@@ -24,10 +15,15 @@ This web app is useful as a tool for physicians to quickly search a patient's cl
 ## Getting Started
 To use Dr. Aid:
 
-1.  Download XAMPP
-2.  Start Apache and MySQL
-3.  Delete all files int he htdocs folder
-4.  Replace all project files
+1.  Download the whole repository
+2.  Download and intall XAMPP
+3.  Start Apache and MySQL in XAMPP
+4.  Go to your XAMPP directory and delete every file in the htdocs folder
+5.  Paste the files in the repository into the htdocs folder
+6.  Go to localhost/phpmyadmin 
+7.  Create a new database and import Dr Aid as your data base
+8.  Go to http://localhost/login.html 
+
 
 ## APIs / Libraries / Technology used
 In order to provide the user with this information, the following APIs, libraries, and technology are used:
