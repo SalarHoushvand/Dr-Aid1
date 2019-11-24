@@ -1,74 +1,109 @@
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Patient Register</title>
-    <meta name="description" content="Login - Register Template">
-    <meta name="author" content="Lorenzo Angelino aka MrLolok">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+    <meta name="description" content="Login - Register Template" />
+    <meta name="author" content="Lorenzo Angelino aka MrLolok" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <style>
-        body {
-            background-color: #303641;
-        }
+      body {
+        background-color: #303641;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    
-        <div class="topnav" id="topnav">
-                <a class="active" href="mainpage.html">Home</a>
-                <a href="insert-patient.html">Add New Patient</a>
-                <a href="patientlist.php">Patient List</a>
-                <a href="#about">Messages</a>
-                <a href="#about">Profile</a>
-                <a href="login.html">Log Out</a>
-                <img id="doctor-shape" src="images/doctor.png" alt="" >
-              </div>
+  <body>
+    <div class="topnav" id="topnav">
+      <a class="active" href="mainpage.html">Home</a>
+      <a href="insert-patient.html">Add New Patient</a>
+      <a href="patientlist.php">Patient List</a>
+      <a href="#about">Messages</a>
+      <a href="#about">Profile</a>
+      <a href="login.html">Log Out</a>
+      <img id="doctor-shape" src="images/doctor.png" alt="" />
+    </div>
 
+    <div class="container-fluid" style=" background: rgb(49, 49, 49)">
+      <div class="row">
+        <div id="blank-right" class="col-sm-2 border  text-center "></div>
+        <div id="dashboard" class="col-sm-8 border  text-center ">
+          <br />
+          <img id="user-shape" src="images/user.png" alt="" />
+          <h2><b>Patient Register</b></h2>
+
+          <form align="center" action="patient-reg.php" method="POST">
+            <div class="form-group" align="center">
+              <label for="exampleFormControlInput1">Patient Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                name="name"
+              />
+              <label for="exampleFormControlSelect1">Age</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                name="age"
+              />
             </div>
-
-            <div class="container-fluid " style=" background: rgb(49, 49, 49)">
-                <div class="row">
-                        <div id="blank-right" class="col-sm-2 border  text-center " ></div>
-                    <div id="dashboard" class="col-sm-8 border  text-center ">
-                        <br>
-                        <img id="user-shape" src="images/user.png" alt="">
-                        <h2><b>Patient Register</b></h2>
-                    
-                        <form align="center" action="patient-reg.php" method="POST">
-                            <div class="form-group" align="center">
-                              <label for="exampleFormControlInput1">Patient Name</label>
-                              <input type="text" class="form-control" id="exampleFormControlInput1" name="name">
-                            </div>
-                            <div class="form-group" align="center">
-                                <label for="exampleFormControlSelect1">Age</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" name="age">
-                              </div>
-                              <div class="form-group" align="center">
-                                <label for="exampleFormControlInput1">Patient Email</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" name="email">
-                              </div>
-                            <div class="form-group" align="center">
-                              <label for="exampleFormControlTextarea1">Patient Description</label>
-                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="explanation"></textarea>
-                              <br>
-                              <input id="btn3" type="submit" name="submit" value="Submit">
-                            </div>
-                          </form>
-                          
-                         
-                       
-                    </div>
-                </div>
-               
-                
+            <!-- <div class="form-group" align="center">
+              <label for="exampleFormControlSelect1">Age</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                name="age"
+              />
+            </div> -->
+            <div class="form-group" align="center">
+              <label for="exampleFormControlInput1">Patient Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                name="email"
+              />
             </div>
-            
-
-</body>
-
+            <div class="form-group" align="center">
+              <label for="exampleFormControlTextarea1"
+                >Patient Symptoms & Diagnoses</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                name="explanation"
+              ></textarea>
+            </div>
+            <div class="form-group" align="center">
+              <label for="exampleFormControlTextarea1"
+                >Patient Symptoms & Diagnoses</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                name="explanation"
+              ></textarea>
+            </div>
+            <br />
+            <input id="btn3" type="submit" name="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
