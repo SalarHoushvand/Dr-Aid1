@@ -14,6 +14,10 @@
     $email = $row['email'];
     $age = $row['age'];
     $discription = $row['explanation'];
+    $fvisit = $row['firstv'];
+    $phone = $row['phone'];
+    $enumber = $row['enumber'];
+    $vdate = $row['vdate'];
   }
 }
 
@@ -54,7 +58,7 @@
                 <div class="container-fluid " style=" background: rgb(49, 49, 49)">
                     <div class="row">
                             <div id="blank-right" class="col-sm-2 border  text-center " ></div>
-                        <div id="dashboard" class="col-sm-8 border  text-center ">
+                        <div id="dashboard" style="height: 1000px;" class="col-sm-8 border   text-center ">
                             <br>
                             <img id="user-shape" src="images/user.png" alt=""> ';
                             
@@ -74,6 +78,35 @@ echo '<br><br><h2 name="patientname"><b>'.$selected_val; // Displaying Selected 
                             
                             <p name="age"><b>Age</b></p>
                             <p>'.$age;
+
+                            echo'</p>
+                            
+                            <br>
+                            
+                            <p name="fvisit"><b>First Visit Date</b></p>
+                            <p>'.$fvisit;
+
+                            echo'</p>
+                            
+                            <br>
+                            
+                            <p name="phone"><b>Phone Number</b></p>
+                            <p>'.$phone;
+
+                            echo'</p>
+                            
+                            <br>
+                            
+                            <p name="enumber"><b>Emergency Phone Number</b></p>
+                            <p>'.$enumber;
+
+                            echo'</p>
+                            
+                            <br>
+                            
+                            <p name="vdate"><b>Visit Date</b></p>
+                            <p>'.$vdate;
+
 
                           echo'</p> <br>
                            
