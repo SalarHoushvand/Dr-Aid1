@@ -13,8 +13,8 @@ $vdate = $_POST['vdate'];
 
 //Database connection
 
-// $conn = new mysqli('localhost', 'root', '', 'draid');
-$conn = new mysqli('us-cdbr-iron-east-05.cleardb.net', 'b113d931bd12b9', '5f01e24a', 'heroku_9155751049f1d50');
+$conn = new mysqli('localhost', 'root', '', 'draid');
+// $conn = new mysqli('us-cdbr-iron-east-05.cleardb.net', 'b113d931bd12b9', '5f01e24a', 'heroku_9155751049f1d50');
 if($conn->connect_error){
     die('connection failed : '.$conn->connect_error);
 }else{

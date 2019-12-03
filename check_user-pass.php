@@ -1,5 +1,6 @@
 <?php
-    $conn       = mysqli_connect('us-cdbr-iron-east-05.cleardb.net', 'b113d931bd12b9', '5f01e24a', 'heroku_9155751049f1d50');
+    // $conn       = mysqli_connect('us-cdbr-iron-east-05.cleardb.net', 'b113d931bd12b9', '5f01e24a', 'heroku_9155751049f1d50');
+    $conn = new mysqli('localhost', 'root', '', 'draid');
     $username   = $_POST['username'];
     $password   = $_POST['password'];
     $query      = "select * from patients where username = '$username'";
